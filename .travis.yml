@@ -1,11 +1,17 @@
 language: node_js
 node_js:
-  - "0.11"
-  - "0.10"
-
-before_install:
-  - sudo rm -rf /etc/apt/sources.list.d/*
-  - wget -O- http://packages.couchbase.com/ubuntu/couchbase.key | sudo apt-key add -
-  - echo deb http://packages.couchbase.com/snapshot/ubuntu oneiric oneiric/main | sudo tee /etc/apt/sources.list.d/couchbase.list
-  - sudo apt-get update
-  - sudo apt-get -y install libcouchbase-dev libcouchbase2-core libcouchbase2-libevent libevent-dev
+  - "8"
+deploy:
+  provider: npm
+  email: info@compknowhow.com
+  api_key: $NPM_AUTH_TOKEN
+  skip_cleanup: true
+  on:
+    branch: master
+    tags: true
+notifications:
+  email:
+    recipients:
+      - info@compknowhow.com
+    on_success: change
+    on_failure: always
