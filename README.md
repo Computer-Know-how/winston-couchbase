@@ -1,34 +1,34 @@
-winston-couchbase
-=================
+# Winston Couchbase 2
 
-[![NPM](https://nodei.co/npm/winston-couchbase.png?downloads=true)](https://nodei.co/npm/winston-couchbase/)
+[![NPM](https://nodei.co/npm/winston-couchbase-2.png?downloads=true)](https://nodei.co/npm/winston-couchbase-2)
 
-A Couchbase transport for [winston][0].
+A Couchbase transport for [winston][1].
 
-Installation
-------------
+## Installation
 
-    $ npm install winston
-    $ npm install winston-couchbase --save
+```bash
+npm install winston
+npm install winston-couchbase-2 --save
+```
 
-Usage
------
-    var winston = require('winston');
-    // exposes `winston.transports.Couchbase`
-    var winstonCb = require('winston-couchbase');
-    winston.add(winston.transports.Couchbase, options);
+## Usage
 
-Options
--------
+```js
+var winston = require('winston');
+// exposes `winston.transports.Couchbase`
+var winstonCb = require('winston-couchbase-2');
+winston.add(winston.transports.Couchbase, options);
+```
+
+## Options
 
 - level *(default: info)*: level of the message this transport should log.
 - bucket *(default: default)*: bucket where to store logs.
-- prefix *(default: wl)*: prefix of your keys.
+- prefix *(default: wl::)*: prefix of your keys.
 - host *(default: 127.0.0.1:8091)*: address of the couchbase server.
 
-TODO
-----
+## TODO
 
 - Use a single document to store all logs
 
-[0]: https://github.com/flatiron/winston
+[1]: https://github.com/flatiron/winston "Winston"

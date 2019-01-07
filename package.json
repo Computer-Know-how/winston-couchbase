@@ -1,14 +1,14 @@
 {
-  "name": "winston-couchbase",
+  "name": "winston-couchbase-2",
   "version": "0.0.5",
   "description": "A Couchbase transport for winston.",
-  "main": "./lib/winston-couchbase.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/majimboo/winston-couchbase"
+    "url": "git://github.com/Computer-Know-how/winston-couchbase-2"
   },
   "keywords": [
     "couchbase",
@@ -16,19 +16,19 @@
     "logging",
     "transport"
   ],
-  "author": "Majid Arif Siddiqui <me@majidarif.com> (http://blog.majidarif.com/)",
+  "author": "Computer Know How <info@compknowhow.com> (https://compknowhow.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/majimboo/winston-couchbase/issues"
+    "url": "https://github.com/Computer-Know-how/winston-couchbase-2/issues"
   },
-  "homepage": "https://github.com/majimboo/winston-couchbase",
+  "homepage": "https://github.com/Computer-Know-how/winston-couchbase-2",
   "devDependencies": {
     "mocha": "^1.21.3",
     "should": "^4.0.4"
   },
   "dependencies": {
-    "couchbase": "^2.0.0",
-    "node-uuid": "^1.4.1",
-    "winston": "^0.8.0"
+    "couchbase": "^2.6.2",
+    "node-uuid": "^1.4.8",
+    "winston": "^0.8.3"
   }
 }
