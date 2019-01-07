@@ -26,5 +26,6 @@ winston.add(winston.transports.Couchbase, options);
 - bucket *(default: default)*: bucket where to store logs.
 - prefix *(default: wl::)*: prefix of your keys.
 - host *(default: 127.0.0.1:8091)*: address of the couchbase server.
+- expiry *(default: 0)*: when the log should expire (seconds)
 
 [1]: https://github.com/flatiron/winston "Winston"

@@ -4,7 +4,6 @@
   "description": "A Couchbase transport for winston.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha",
     "postversion": "git push && git push --tags"
   },
   "repository": {
@@ -24,12 +23,7 @@
   },
   "homepage": "https://github.com/Computer-Know-how/winston-couchbase-2#readme",
   "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "devDependencies": {
-    "mocha": "^1.21.3",
-    "should": "^4.0.4"
+    "lib": "lib"
   },
   "dependencies": {
     "couchbase": "^2.6.2",
