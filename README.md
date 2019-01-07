@@ -27,8 +27,4 @@ winston.add(winston.transports.Couchbase, options);
 - prefix *(default: wl::)*: prefix of your keys.
 - host *(default: 127.0.0.1:8091)*: address of the couchbase server.
 
-## TODO
-
-- Use a single document to store all logs
-
 [1]: https://github.com/flatiron/winston "Winston"
