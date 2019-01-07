@@ -7,8 +7,7 @@ A Couchbase transport for [winston][1].
 ## Installation
 
 ```bash
-npm install winston
-npm install winston-couchbase-2 --save
+npm install winston-couchbase-2
 ```
 
 ## Usage
